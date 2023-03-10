@@ -8,6 +8,7 @@ import javax.persistence.*;
 @Entity(name = "Usuario")
 @Table(name = "TB_USUARIOS")
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode

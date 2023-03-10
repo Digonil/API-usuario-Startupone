@@ -1,12 +1,10 @@
-package API.Usuario.startupone.usuario;
+package API.Usuario.startupone.dto;
 
-import API.Usuario.startupone.endereco.DadosEnderecoDto;
-import API.Usuario.startupone.endereco.Endereco;
-import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Embedded;
-
+@Getter
+@Setter
 public record ListagemUsuariosDto(
         Long id,
         String nome,

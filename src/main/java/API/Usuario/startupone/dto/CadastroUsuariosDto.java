@@ -1,6 +1,5 @@
-package API.Usuario.startupone.usuario;
+package API.Usuario.startupone.dto;
 
-import API.Usuario.startupone.endereco.DadosEnderecoDto;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
