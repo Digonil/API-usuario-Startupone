@@ -2,10 +2,8 @@ package API.Usuario.startupone.controller;
 
 import API.Usuario.startupone.dto.ListagemUsuariosDto;
 import API.Usuario.startupone.service.UsuarioService;
-import API.Usuario.startupone.usuario.UsuarioRepository;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -15,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
-import java.util.List;
 
 @RestController
 @RequestMapping("/usuarios")

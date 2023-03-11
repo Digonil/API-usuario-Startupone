@@ -1,5 +1,6 @@
 package API.Usuario.startupone.service;
 
+import API.Usuario.startupone.dto.CadastroUsuariosDto;
 import API.Usuario.startupone.dto.ListagemUsuariosDto;
 import API.Usuario.startupone.usuario.Usuario;
 import API.Usuario.startupone.usuario.UsuarioRepository;
@@ -29,17 +30,17 @@ public class UsuarioService {
 
     }
 
-    public ListagemUsuariosDto criarUsuario(ListagemUsuariosDto dto) {
+    public CadastroUsuariosDto criarUsuario(ListagemUsuariosDto dto) {
         Usuario usuario = modelMapper.map(dto, Usuario.class);
         repository.save(usuario);
-        return modelMapper.map(usuario, ListagemUsuariosDto.class);
+        return modelMapper.map(usuario, CadastroUsuariosDto.class);
     }
 
-    public ListagemUsuariosDto atualizarUsuario(Long id, ListagemUsuariosDto dto) {
+    public CadastroUsuariosDto atualizarUsuario(Long id, CadastroUsuariosDto dto) {
         Usuario usuario = modelMapper.map(dto, Usuario.class);
         usuario.setId(id);
         usuario = repository.save(usuario);
-        return modelMapper.map(usuario, ListagemUsuariosDto.class);
+        return modelMapper.map(usuario, CadastroUsuariosDto.class);
     }
 
     public void excluirUsuario(Long id) {

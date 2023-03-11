@@ -1,8 +1,8 @@
-create table TB_USUARIOS
+create table usuarios
 (
 
     id                      bigint       not null auto_increment,
-    nome                    varchar(80 not null,
+    nome                    varchar(80) not null,
     sobrenome               varchar(80) not null,
     email                   varchar(80) not null unique,
     rg                      varchar(12)   not null unique,
