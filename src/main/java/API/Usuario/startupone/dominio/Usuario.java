@@ -1,9 +1,7 @@
-package API.Usuario.startupone.usuario;
+package API.Usuario.startupone.dominio;
 
-import API.Usuario.startupone.dto.CadastroUsuariosDto;
-import API.Usuario.startupone.endereco.Endereco;
+import API.Usuario.startupone.aplicacao.dto.CadastroUsuariosDto;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 import javax.persistence.*;

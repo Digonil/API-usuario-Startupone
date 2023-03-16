@@ -1,7 +1,6 @@
-package API.Usuario.startupone.endereco;
+package API.Usuario.startupone.dominio;
 
-import API.Usuario.startupone.dto.CadastroUsuariosDto;
-import API.Usuario.startupone.dto.DadosEnderecoDto;
+import API.Usuario.startupone.aplicacao.dto.DadosEnderecoDto;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

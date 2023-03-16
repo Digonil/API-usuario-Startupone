@@ -1,9 +1,9 @@
-package API.Usuario.startupone.service;
+package API.Usuario.startupone.aplicacao.service;
 
-import API.Usuario.startupone.dto.CadastroUsuariosDto;
-import API.Usuario.startupone.dto.ListagemUsuariosDto;
-import API.Usuario.startupone.usuario.Usuario;
-import API.Usuario.startupone.usuario.UsuarioRepository;
+import API.Usuario.startupone.aplicacao.dto.CadastroUsuariosDto;
+import API.Usuario.startupone.aplicacao.dto.ListagemUsuariosDto;
+import API.Usuario.startupone.dominio.Usuario;
+import API.Usuario.startupone.infra.repository.UsuarioRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

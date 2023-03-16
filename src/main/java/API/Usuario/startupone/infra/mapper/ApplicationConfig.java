@@ -1,4 +1,4 @@
-package API.Usuario.startupone.config;
+package API.Usuario.startupone.infra.mapper;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

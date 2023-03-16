@@ -1,4 +1,4 @@
-package API.Usuario.startupone.dto;
+package API.Usuario.startupone.aplicacao.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
