@@ -14,8 +14,8 @@ create table usuarios
     complemento             varchar(50),
     bairro                  varchar(50) not null,
     cidade                  varchar(80) not null,
-    cep                     varchar(8) not null,
-    uf                      char(2)    not null,
+    cep                     varchar(10) not null,
+    uf                      char(5)    not null,
 
 
     primary key (id)

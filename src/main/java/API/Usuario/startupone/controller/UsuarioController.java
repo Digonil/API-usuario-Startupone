@@ -1,7 +1,9 @@
 package API.Usuario.startupone.controller;
 
+import API.Usuario.startupone.dto.CadastroUsuariosDto;
 import API.Usuario.startupone.dto.ListagemUsuariosDto;
 import API.Usuario.startupone.service.UsuarioService;
+import API.Usuario.startupone.usuario.Usuario;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,15 +34,14 @@ public class UsuarioController {
     }
 
     @PostMapping
-    public ResponseEntity<ListagemUsuariosDto> criarUsuario(@RequestBody @Valid ListagemUsuariosDto dto, UriComponentsBuilder uriBuilder) {
-        ListagemUsuariosDto usuario = service.criarUsuario(dto);
-        URI endereco = uriBuilder.path("/usuarios/{id}").buildAndExpand(usuario.getId()).toUri();
-        return ResponseEntity.created(endereco).body(usuario);
+    public ResponseEntity<CadastroUsuariosDto> criarUsuario(@RequestBody @Valid CadastroUsuariosDto dto) {
+        CadastroUsuariosDto usuario = service.criarUsuario(dto);
+        return ResponseEntity.ok().body(usuario);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ListagemUsuariosDto> atualizar(@PathVariable @NotNull Long id, @RequestBody @Valid ListagemUsuariosDto dto) {
-        ListagemUsuariosDto atualizado = service.atualizarUsuario(id, dto);
+    public ResponseEntity<CadastroUsuariosDto> atualizar(@PathVariable @NotNull Long id, @RequestBody @Valid CadastroUsuariosDto dto) {
+        CadastroUsuariosDto atualizado = service.atualizarUsuario(id, dto);
         return ResponseEntity.ok(atualizado);
     }
 

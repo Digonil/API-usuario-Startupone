@@ -30,10 +30,14 @@ public class UsuarioService {
 
     }
 
-    public CadastroUsuariosDto criarUsuario(ListagemUsuariosDto dto) {
+    public CadastroUsuariosDto criarUsuario(CadastroUsuariosDto dto) {
+        System.out.println(dto);
         Usuario usuario = modelMapper.map(dto, Usuario.class);
+        System.out.println(usuario);
         repository.save(usuario);
         return modelMapper.map(usuario, CadastroUsuariosDto.class);
+
+
     }
 
     public CadastroUsuariosDto atualizarUsuario(Long id, CadastroUsuariosDto dto) {
