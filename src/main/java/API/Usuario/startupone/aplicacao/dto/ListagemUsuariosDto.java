@@ -11,10 +11,11 @@ public class ListagemUsuariosDto{
     String nome;
     String sobrenome;
     String email;
+
+    String senha;
     String rg;
     String cpf;
-    String telefoneResidencial;
-    String telefoneCelular;
+    String telefone;
     DadosEnderecoDto endereco;
 
 }

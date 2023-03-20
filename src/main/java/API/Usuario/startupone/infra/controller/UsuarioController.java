@@ -30,7 +30,7 @@ public class UsuarioController {
     }
 
     @PostMapping
-    public ResponseEntity<CadastroUsuariosDto> criarUsuario(@RequestBody @Valid CadastroUsuariosDto dto) {
+    public ResponseEntity<CadastroUsuariosDto> criarUsuario(@RequestBody  CadastroUsuariosDto dto) {
         CadastroUsuariosDto usuario = service.criarUsuario(dto);
         return ResponseEntity.ok().body(usuario);
     }

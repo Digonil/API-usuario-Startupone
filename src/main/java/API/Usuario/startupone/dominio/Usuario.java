@@ -23,12 +23,11 @@ public class Usuario {
     private String sobrenome;
     @Email
     private String email;
+    private String senha;
     private String rg;
     private String cpf;
-    @Column(name = "telefone_residencial")
-    private String telefoneResidencial;
-    @Column(name = "telefone_celular")
-    private String telefoneCelular;
+
+    private String telefone;
     @Embedded
     private Endereco endereco;
 
@@ -36,10 +35,10 @@ public class Usuario {
         this.nome = dados.getNome();
         this.sobrenome = dados.getSobrenome();
         this.email = dados.getEmail();
+        this.senha = dados.getSenha();
         this.rg = dados.getRg();
         this.cpf = dados.getCpf();
-        this.telefoneResidencial = dados.getTelefoneResidencial();
-        this.telefoneCelular = dados.getTelefoneCelular();
+        this.telefone= dados.getTelefone();
         this.endereco = new Endereco(dados.getEndereco());
     }
 }

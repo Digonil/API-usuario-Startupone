@@ -13,22 +13,22 @@ import javax.persistence.Embedded;
 @Setter
 @ToString
 public class CadastroUsuariosDto {
-    @NotBlank
+
     String nome;
-    @NotBlank
+
     String sobrenome;
-    @NotBlank
+
     @Email
     String email;
-    @NotBlank
+
+    String senha;
+
     String rg;
-    @NotBlank
+
     String cpf;
-    String telefoneResidencial;
-    @NotBlank
-    String telefoneCelular;
-    @NotBlank
-    @Valid
+
+    String telefone;
+
     @Embedded
     DadosEnderecoDto endereco;
 }

@@ -13,17 +13,17 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class DadosEnderecoDto {
 
-    @NotBlank
+
     private String logradouro;
-    @NotBlank
+
     private String numero;
     private String complemento;
-    @NotBlank
+
     private String bairro;
-    @NotBlank
+
     private String cidade;
-    @NotBlank
+
     private String cep;
-    @NotBlank
+
     private String uf;
 }
